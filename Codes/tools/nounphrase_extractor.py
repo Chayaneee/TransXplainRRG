@@ -4,8 +4,8 @@ from tqdm import tqdm
 
 nlp = spacy.load('en_core_web_sm')
 
-# dataset_dir = '/home/hoang/Datasets/MIMIC/'
-dataset_dir = '/home/chayan/IU-XRay/'
+#dataset_dir = '/mnt/data/chayan/MIMIC-CXR-JPG/2.0.0/'
+dataset_dir = '/mnt/data/chayan/IUCXR/'
 count_sentence = json.load(open(dataset_dir + 'count_sentence.json', 'r'))
 
 np_count = {}
