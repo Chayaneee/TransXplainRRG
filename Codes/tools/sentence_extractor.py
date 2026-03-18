@@ -23,7 +23,7 @@ json.dump(count_sentence, open(dataset_dir + 'count_sentence.json', 'w'))
 
 
 # --- For OpenI dataset ---
-dataset_dir = '/home/hoang/Datasets/NLMCXR/'
+dataset_dir = '/home/chayan/Datasets/IUCXR/'
 section_tgt = 'FINDINGS'
 
 reports = json.load(open(dataset_dir + 'reports.json', 'r'))
