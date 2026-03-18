@@ -1,7 +1,7 @@
 import json
 
 # --- For MIMIC dataset ---
-dataset_dir = '/home/chayan/Datasets/MIMIC/'
+dataset_dir = '/mnt/data/chayan/MIMIC-CXR-JPG/2.0.0/'
 section_tgt = 'FINDINGS:'
 
 reports = json.load(open(dataset_dir + 'reports.json', 'r'))
@@ -23,7 +23,7 @@ json.dump(count_sentence, open(dataset_dir + 'count_sentence.json', 'w'))
 
 
 # --- For OpenI dataset ---
-dataset_dir = '/home/chayan/Datasets/IUCXR/'
+dataset_dir = '/mnt/data/chayan/IUCXR/'
 section_tgt = 'FINDINGS'
 
 reports = json.load(open(dataset_dir + 'reports.json', 'r'))
