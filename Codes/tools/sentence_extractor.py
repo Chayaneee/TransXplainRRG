@@ -1,7 +1,7 @@
 import json
 
 # --- For MIMIC dataset ---
-dataset_dir = '/home/hoang/Datasets/MIMIC/'
+dataset_dir = '/home/chayan/Datasets/MIMIC/'
 section_tgt = 'FINDINGS:'
 
 reports = json.load(open(dataset_dir + 'reports.json', 'r'))
