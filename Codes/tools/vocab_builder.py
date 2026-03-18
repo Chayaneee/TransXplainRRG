@@ -16,9 +16,9 @@ def preprocess(text):
     return text
 
 # Hyper-parameters
-word_size = 4500 # Most frequent words
-total_size = 5000 # total_size = word_size + others
-dataset_dir = '/home/hoang/Datasets/MIMIC/'
+word_size = 4500 # Most frequent words either 900 or 4500
+total_size = 5000 # total_size = word_size + others (900 + 100 = 1000 or 4500 + 500 = 5000)
+dataset_dir = '/home/chayan/Datasets/MIMIC/'
 file_list = glob.glob(dataset_dir + 'files/**/*.txt', recursive=True)
 
 # Compute covering ratio
