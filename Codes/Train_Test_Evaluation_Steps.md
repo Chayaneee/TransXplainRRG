@@ -9,7 +9,7 @@ This document provides a **step-by-step reproducible pipeline** for training, te
 
 ```bash
 git clone <your-repo-url>
-cd TransXplainRRG
+cd TransXplainRRG/Codes
 
 conda create -n transxplainrrg python=3.9 -y
 conda activate transxplainrrg
