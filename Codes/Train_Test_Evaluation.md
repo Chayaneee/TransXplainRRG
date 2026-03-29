@@ -134,6 +134,7 @@ CLinical Efficiency Metrics (Micro & Macro):
 - Accuracy 
 
 #### 3. Radiology-Specific Evaluation (Rad-Eval)
+Use RadEval to compute clinical correctness and semantic metrics directly from generated reports and ground truth reports.
 ```bash
 cd Report_Evaluation/Metrics/
 #Convert text to CSV:   `
@@ -141,3 +142,42 @@ python txt2csv.py
 #Run evaluation:
 python rad_evaluation.py
 ```
+Metrics:
+- F1CheXbert
+- F1 RadGraph
+- GREEN
+- BLEU-4
+- ROUGE-L
+- BERTScore
+- RadCliQ
+Note: GREEN and RadCliQ require high GPU resources.
+See https://github.com/jbdel/RadEval for more details.
+
+###🔹 Stage 2: LLM-Based Report Refinement
+After generating raw reports, we apply LLM-based restructuring to improve clinical readability and interpretability.
+Objective:
+Transform generated reports into:
+- Inside-Out structured format
+- Abnormal Findings-focused summary
+
+#### LLM Prompting Strategy
+Each generated report is passed through an LLM with prompts designed to:
+- Reorganize content anatomically (Inside-Out approach)
+- Highlight clinically relevant abnormalities 
+- Remove redundancy and improve clarity
+
+#### Inside-Out Report Generation
+```bash
+cd Codes/Inside-Out/Codes
+#For GPT-API
+python inside-out-GPT.py
+#For Llama
+python inside-out-llama3-8b.py
+```
+#### Abnormal Findings Extraction
+```bash
+cd Codes/Abnormal_Findings/Codes
+#For GPT-API
+python Abnormal-FIndings-GPT.py
+#For Llama
+python Abnormal_Findings_Llama3.py
