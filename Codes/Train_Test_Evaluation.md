@@ -31,3 +31,15 @@ Use CheXpert labels as ground truth
 ```bash
 wget https://raw.githubusercontent.com/ZexinYan/Medical-Report-Generation/master/data/new_data/captions.json
 ```
+Place the file in: data/IU-CXR/
+
+### 📌 Vocabulary Setting
+Build your vocabulary model with SentencePiece (tools/vocab_builder.py)
+
+We use a 5000-token vocabulary for the MIMIC-CXR Dataset:
+•	4500 high-frequency words 
+•	500 SentencePiece unigram tokens
+For the IU-CXR Dataset, we use a 1000-token vocabulary:
+•	900 high-frequency words 
+•	100 SentencePiece unigram tokens
+Prebuilt vocabularies are available in: Vocabulary/*.model 
