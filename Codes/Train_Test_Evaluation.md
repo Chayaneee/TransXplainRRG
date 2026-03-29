@@ -38,14 +38,18 @@ Build your vocabulary model with SentencePiece
 ```bash
 python tools/vocab_builder.py 
 ```
-MIMIC-CXR Vocabulary (5000 tokens)
-4500 high-frequency words
-500 SentencePiece unigram tokens
-IU-CXR Vocabulary (1000 tokens)
-900 high-frequency words
-100 SentencePiece unigram tokens
+#### 🔹 MIMIC-CXR Vocabulary (5000 tokens)
+
+- 4500 high-frequency words  
+- 500 SentencePiece unigram tokens  
+
+#### 🔹 IU-CXR Vocabulary (1000 tokens)
+
+- 900 high-frequency words  
+- 100 SentencePiece unigram tokens  
 
 Prebuilt vocabularies are available in:
+
 ```bash
 Vocabulary/*.model
 ```
