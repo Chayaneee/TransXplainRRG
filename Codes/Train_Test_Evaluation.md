@@ -132,3 +132,12 @@ CLinical Efficiency Metrics (Micro & Macro):
 - Precision
 - Recall
 - Accuracy 
+
+#### 3. Radiology-Specific Evaluation (Rad-Eval)
+```bash
+cd Report_Evaluation/Metrics/
+#Convert text to CSV:   `
+python txt2csv.py
+#Run evaluation:
+python rad_evaluation.py
+```
