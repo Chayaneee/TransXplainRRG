@@ -24,3 +24,6 @@ We have used three datasets for this experiment.
 
 # Qualitative Results (Radiologist Viewpoint)
 ![Image](https://github.com/user-attachments/assets/32909112-19a3-4074-b59f-f92d008d8f28)
+
+# Reproducibility 
+Please see the [Train/Test/Evaluation Guide](Train_Test_Evaluation.md) to use code for train/evaluation.
