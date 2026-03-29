@@ -34,12 +34,18 @@ wget https://raw.githubusercontent.com/ZexinYan/Medical-Report-Generation/master
 Place the file in: data/IU-CXR/
 
 ### 📌 Vocabulary Setting
-Build your vocabulary model with SentencePiece (tools/vocab_builder.py)
+Build your vocabulary model with SentencePiece 
+```bash
+python tools/vocab_builder.py 
+```
+MIMIC-CXR Vocabulary (5000 tokens)
+4500 high-frequency words
+500 SentencePiece unigram tokens
+IU-CXR Vocabulary (1000 tokens)
+900 high-frequency words
+100 SentencePiece unigram tokens
 
-We use a 5000-token vocabulary for the MIMIC-CXR Dataset:
-•	4500 high-frequency words 
-•	500 SentencePiece unigram tokens
-For the IU-CXR Dataset, we use a 1000-token vocabulary:
-•	900 high-frequency words 
-•	100 SentencePiece unigram tokens
-Prebuilt vocabularies are available in: Vocabulary/*.model 
+Prebuilt vocabularies are available in:
+```bash
+Vocabulary/*.model
+```
