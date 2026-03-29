@@ -108,3 +108,27 @@ Output:
 ```bash
 outputs/raw_reports.txt
 ```
+
+## 📊 Evaluation Pipeline
+
+### 🔹 Stage 1: Direct Evaluation
+#### 1. Language Quality Metrics
+```bash
+   nlg-eval --hypothesis=outputs/*hyp.txt --references=outputs/*ref.txt
+```
+Metrics:
+- BLEU-1, BLEU-2, BLEU-3, BLEU-4
+- METEOR
+- ROUGE-L
+- CIDEr
+
+#### 2. Clinical Evaluation Metrics
+```bash
+python eval_text.py
+```
+CLinical Efficiency Metrics (Micro & Macro):
+- AUC
+- F1-score
+- Precision
+- Recall
+- Accuracy 
