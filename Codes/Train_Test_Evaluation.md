@@ -27,7 +27,7 @@ python tools/report_extractor.py
 Use CheXpert labels as ground truth
 ```
 
-###🔹IU-CXR (Open-I Dataset)
+### 🔹 IU-CXR (Open-I Dataset)
 ```bash
 wget https://raw.githubusercontent.com/ZexinYan/Medical-Report-Generation/master/data/new_data/captions.json
 ```
