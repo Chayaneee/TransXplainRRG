@@ -26,4 +26,17 @@ We have used three datasets for this experiment.
 ![Image](https://github.com/user-attachments/assets/32909112-19a3-4074-b59f-f92d008d8f28)
 
 # Reproducibility 
-Please see the [Train/Test/Evaluation Guide](Codes/Train_Test_Evaluation_Steps.md) to use code for train/evaluation. 
+Please see the [Train/Test/Evaluation Guide](Codes/Train_Test_Evaluation_Steps.md) to use code for train/evaluation. `
+
+# 📜 Citation
+If you use this repository or build upon our work, please consider citing our paper.
+
+```bibtex
+@article{mondal2025transxplainrrg,
+  title={TransXplainRRG: A Clinically-Validated LVLM for Chest Radiograph Report Generation},
+  author={Mondal, Chayan and Pham, Duc-Son and Tan, Tele and Gupta, Ashu and Ghosh, Shreya and Gedeon, Tom},
+  journal={Authorea Preprints},
+  year={2025},
+  publisher={Authorea}
+}
+```
