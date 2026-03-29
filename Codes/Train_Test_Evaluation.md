@@ -53,3 +53,42 @@ Prebuilt vocabularies are available in:
 ```bash
 Vocabulary/*.model
 ```
+
+## 🧠 Training Pipeline
+
+### Step 1: Train Transformer-Based Text Classifier
+```bash
+python train_text.py
+```
+Configuration:
+```python
+PHASE = 'TRAIN'
+RELOAD = False
+```
+Predicts 14 disease labels 
+Used for: 
+- Supervision 
+- Clinical evaluation proxy
+
+
+### Step 2: Evaluate Text Classifier
+Configuration:
+PHASE = 'TEST'
+RELOAD = True
+Run:
+python train_text.py
+
+### Step 3: Train TransXplainRRG (Swin-Based)
+python train_swin.py
+Configuration:
+PHASE = 'TRAIN'
+RELOAD = False
+
+### Step 4: Generate Reports (Inference)
+Configuration:
+PHASE = 'INFER'
+RELOAD = True
+Run:
+python train_swin.py
+Output:
+outputs/raw_reports.txt
