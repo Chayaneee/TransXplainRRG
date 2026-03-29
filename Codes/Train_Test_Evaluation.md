@@ -24,8 +24,8 @@ pip install RadEval
 
 ```bash
 python tools/report_extractor.py
-Use CheXpert labels as ground truth
 ```
+Use CheXpert labels as ground truth
 
 ### 🔹 IU-CXR (Open-I Dataset)
 ```bash
