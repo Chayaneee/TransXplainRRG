@@ -73,22 +73,38 @@ Used for:
 
 ### Step 2: Evaluate Text Classifier
 Configuration:
+```python
 PHASE = 'TEST'
 RELOAD = True
+```
 Run:
+```bash
 python train_text.py
+```
 
 ### Step 3: Train TransXplainRRG (Swin-Based)
+```bash
 python train_swin.py
+```
 Configuration:
+```python
 PHASE = 'TRAIN'
 RELOAD = False
+```
 
 ### Step 4: Generate Reports (Inference)
 Configuration:
+```python
 PHASE = 'INFER'
 RELOAD = True
+```
+
 Run:
+```bash
 python train_swin.py
+```
+
 Output:
+```bash
 outputs/raw_reports.txt
+```
