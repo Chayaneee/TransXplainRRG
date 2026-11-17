@@ -32,11 +32,13 @@ Please see the [Train/Test/Evaluation Guide](Codes/Train_Test_Evaluation_Steps.m
 If you use this repository or build upon our work, please consider citing our paper.
 
 ```bibtex
-@article{mondal2025transxplainrrg,
-  title={TransXplainRRG: A Clinically-Validated LVLM for Chest Radiograph Report Generation},
-  author={Mondal, Chayan and Pham, Duc-Son and Tan, Tele and Gupta, Ashu and Ghosh, Shreya and Gedeon, Tom},
-  journal={Authorea Preprints},
-  year={2025},
-  publisher={Authorea}
+@misc{mondal2026transxplainrrgradiologistevaluatedlvlmchest,
+      title={TransXplainRRG: A Radiologist-Evaluated LVLM for Chest Radiograph Report Generation}, 
+      author={Chayan Mondal and Duc-Son Pham and Tele Tan and Ashu Gupta and Vincent T. Y. Tiong and Shreya Ghosh and Tom Gedeon},
+      year={2026},
+      eprint={2611.16393},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2611.16393}, 
 }
 ```
